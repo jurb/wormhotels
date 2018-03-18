@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_48da50c37b9549dd84d81dd2947062d4 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_48da50c37b9549dd84d81dd2947062d4" ></div>
+        
+</body>
+<script>    
+    
+
+            
+                var bounds = null;
+            
+
+            var map_48da50c37b9549dd84d81dd2947062d4 = L.map(
+                                  'map_48da50c37b9549dd84d81dd2947062d4',
+                                  {center: [52.3824856,4.877951499999995],
+                                  zoom: 12,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_99c3a3cff0354891bd94859246dd5543 = L.tileLayer(
+                'https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png',
+                {
+  "attribution": null,
+  "detectRetina": false,
+  "maxZoom": 18,
+  "minZoom": 1,
+  "noWrap": false,
+  "subdomains": "abc"
+}
+                ).addTo(map_48da50c37b9549dd84d81dd2947062d4);
+        
+    
+            var feature_group_76c7f2b3c4dc4c2885510cc3d01b198c = L.featureGroup(
+                ).addTo(map_48da50c37b9549dd84d81dd2947062d4);
+        
+    
+
+            var marker_76f04e735d6b4b53bfb2cf1298505d4c = L.marker(
+                [52.381994,4.87648],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_76c7f2b3c4dc4c2885510cc3d01b198c);
+            
+    
+
+                var icon_be62f685333a4f85b94743a5e15fc798 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_76f04e735d6b4b53bfb2cf1298505d4c.setIcon(icon_be62f685333a4f85b94743a5e15fc798);
+            
+    
+            var popup_df4eda82148b483d9328e43bd09e1734 = L.popup({maxWidth: '300'});
+
+            
+                var html_47f2eba27b574788b35ec581220f531c = $('<div id="html_47f2eba27b574788b35ec581220f531c" style="width: 100.0%; height: 100.0%;">My house (approx.)</div>')[0];
+                popup_df4eda82148b483d9328e43bd09e1734.setContent(html_47f2eba27b574788b35ec581220f531c);
+            
+
+            marker_76f04e735d6b4b53bfb2cf1298505d4c.bindPopup(popup_df4eda82148b483d9328e43bd09e1734);
+
+            
+        
+    
+            var feature_group_e90d550b0dd4482f9ee6903ba3a6faf5 = L.featureGroup(
+                ).addTo(map_48da50c37b9549dd84d81dd2947062d4);
+        
+    
+
+            var marker_e868d714a8644658929d050ac4cfa1fe = L.marker(
+                [52.356007,4.888706],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_e90d550b0dd4482f9ee6903ba3a6faf5);
+            
+    
+            var popup_9e3c37e7f1404e388c987dc362747b54 = L.popup({maxWidth: '300'});
+
+            
+                var html_38314b5a37534cc79b387fbc682dc0ff = $('<div id="html_38314b5a37534cc79b387fbc682dc0ff" style="width: 100.0%; height: 100.0%;">Frans Halsstraat</div>')[0];
+                popup_9e3c37e7f1404e388c987dc362747b54.setContent(html_38314b5a37534cc79b387fbc682dc0ff);
+            
+
+            marker_e868d714a8644658929d050ac4cfa1fe.bindPopup(popup_9e3c37e7f1404e388c987dc362747b54);
+
+            
+        
+    
+
+            var marker_f826d05fc4954af78ba1a85d34ec5672 = L.marker(
+                [52.349857,4.908527],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_e90d550b0dd4482f9ee6903ba3a6faf5);
+            
+    
+            var popup_df79236ae98d4947b33a90767f58dee5 = L.popup({maxWidth: '300'});
+
+            
+                var html_d96b45d58a8f4b078c14e4e3fcc911ab = $('<div id="html_d96b45d58a8f4b078c14e4e3fcc911ab" style="width: 100.0%; height: 100.0%;">hoek saffierstraat jozef israelkade</div>')[0];
+                popup_df79236ae98d4947b33a90767f58dee5.setContent(html_d96b45d58a8f4b078c14e4e3fcc911ab);
+            
+
+            marker_f826d05fc4954af78ba1a85d34ec5672.bindPopup(popup_df79236ae98d4947b33a90767f58dee5);
+
+            
+        
+    
+
+            var marker_e1f9d974b9134f18822efff83573d171 = L.marker(
+                [52.391292,4.871422],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_e90d550b0dd4482f9ee6903ba3a6faf5);
+            
+    
+            var popup_2d85ba51697e402da8a837142a445644 = L.popup({maxWidth: '300'});
+
+            
+                var html_d052fc8738b142e8881e97cafd23c131 = $('<div id="html_d052fc8738b142e8881e97cafd23c131" style="width: 100.0%; height: 100.0%;">zaanstraat t/o 300</div>')[0];
+                popup_2d85ba51697e402da8a837142a445644.setContent(html_d052fc8738b142e8881e97cafd23c131);
+            
+
+            marker_e1f9d974b9134f18822efff83573d171.bindPopup(popup_2d85ba51697e402da8a837142a445644);
+
+            
+        
+    
+
+            var marker_b2760c9c25fe4e17a9c61cec456cdf43 = L.marker(
+                [52.36213,4.945789],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_e90d550b0dd4482f9ee6903ba3a6faf5);
+            
+    
+            var popup_e104871912bd4017b6e0f78e4946b77c = L.popup({maxWidth: '300'});
+
+            
+                var html_bf17088f2d7e4116b6069c38ad0c877e = $('<div id="html_bf17088f2d7e4116b6069c38ad0c877e" style="width: 100.0%; height: 100.0%;">kramatweg 51</div>')[0];
+                popup_e104871912bd4017b6e0f78e4946b77c.setContent(html_bf17088f2d7e4116b6069c38ad0c877e);
+            
+
+            marker_b2760c9c25fe4e17a9c61cec456cdf43.bindPopup(popup_e104871912bd4017b6e0f78e4946b77c);
+
+            
+        
+    
+
+            var marker_0331019732814b1aaed71a95df88f1f9 = L.marker(
+                [52.382154,4.910984],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_e90d550b0dd4482f9ee6903ba3a6faf5);
+            
+    
+            var popup_e4702ee131af4672a1a01fcfb2190d03 = L.popup({maxWidth: '300'});
+
+            
+                var html_a1df671a5be34e20b83abebbb3887e89 = $('<div id="html_a1df671a5be34e20b83abebbb3887e89" style="width: 100.0%; height: 100.0%;">IJplein</div>')[0];
+                popup_e4702ee131af4672a1a01fcfb2190d03.setContent(html_a1df671a5be34e20b83abebbb3887e89);
+            
+
+            marker_0331019732814b1aaed71a95df88f1f9.bindPopup(popup_e4702ee131af4672a1a01fcfb2190d03);
+
+            
+        
+    
+
+            var marker_c0711a2915c843edb0aadac62b6abf33 = L.marker(
+                [52.3687925,4.864346],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_e90d550b0dd4482f9ee6903ba3a6faf5);
+            
+    
+            var popup_34f9bb96011f487983a8f1b6badf8870 = L.popup({maxWidth: '300'});
+
+            
+                var html_1faad01856b24c159f30b0e9a80f8061 = $('<div id="html_1faad01856b24c159f30b0e9a80f8061" style="width: 100.0%; height: 100.0%;">schimmelstraat 44</div>')[0];
+                popup_34f9bb96011f487983a8f1b6badf8870.setContent(html_1faad01856b24c159f30b0e9a80f8061);
+            
+
+            marker_c0711a2915c843edb0aadac62b6abf33.bindPopup(popup_34f9bb96011f487983a8f1b6badf8870);
+
+            
+        
+    
+
+            var marker_8a85858182e04b35b1e58f55b2ac9b13 = L.marker(
+                [52.3370046,4.926176],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_e90d550b0dd4482f9ee6903ba3a6faf5);
+            
+    
+            var popup_fed0f54d77a34a81a5d144f9b5cfb716 = L.popup({maxWidth: '300'});
+
+            
+                var html_c1c6c302357c4980b93873fa4a2b0242 = $('<div id="html_c1c6c302357c4980b93873fa4a2b0242" style="width: 100.0%; height: 100.0%;">h.j.e. wenckebachweg 20</div>')[0];
+                popup_fed0f54d77a34a81a5d144f9b5cfb716.setContent(html_c1c6c302357c4980b93873fa4a2b0242);
+            
+
+            marker_8a85858182e04b35b1e58f55b2ac9b13.bindPopup(popup_fed0f54d77a34a81a5d144f9b5cfb716);
+
+            
+        
+    
+
+            var marker_a01724f07c4d4ee982c308dd6c9f65f4 = L.marker(
+                [52.37154,4.971355],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_e90d550b0dd4482f9ee6903ba3a6faf5);
+            
+    
+            var popup_452747639d5a461aaeaab0362582de4b = L.popup({maxWidth: '300'});
+
+            
+                var html_fb1e191bdf3f4532b88b0e78bca19592 = $('<div id="html_fb1e191bdf3f4532b88b0e78bca19592" style="width: 100.0%; height: 100.0%;">zeeburgertuin bob haarmslaan 20</div>')[0];
+                popup_452747639d5a461aaeaab0362582de4b.setContent(html_fb1e191bdf3f4532b88b0e78bca19592);
+            
+
+            marker_a01724f07c4d4ee982c308dd6c9f65f4.bindPopup(popup_452747639d5a461aaeaab0362582de4b);
+
+            
+        
+    
+
+            var marker_d3f248b203ad4f909f940aaecbe996c2 = L.marker(
+                [52.345872,5.004663],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_e90d550b0dd4482f9ee6903ba3a6faf5);
+            
+    
+            var popup_d7fd1f0042c74415932faf5eea26325e = L.popup({maxWidth: '300'});
+
+            
+                var html_f3fc0c7a3b8248ac9e5a87b347f10d25 = $('<div id="html_f3fc0c7a3b8248ac9e5a87b347f10d25" style="width: 100.0%; height: 100.0%;">zandzeggestraat 3</div>')[0];
+                popup_d7fd1f0042c74415932faf5eea26325e.setContent(html_f3fc0c7a3b8248ac9e5a87b347f10d25);
+            
+
+            marker_d3f248b203ad4f909f940aaecbe996c2.bindPopup(popup_d7fd1f0042c74415932faf5eea26325e);
+
+            
+        
+    
+
+            var marker_49a645c6c0bf4a2ead61ac5aeb3183cc = L.marker(
+                [52.376636,4.861766],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_e90d550b0dd4482f9ee6903ba3a6faf5);
+            
+    
+            var popup_86c7ed6b82b34aa480ac7420f365ab3f = L.popup({maxWidth: '300'});
+
+            
+                var html_509739e14ff64b0eb2a0497641370954 = $('<div id="html_509739e14ff64b0eb2a0497641370954" style="width: 100.0%; height: 100.0%;">jasper leijnsenstraat 21</div>')[0];
+                popup_86c7ed6b82b34aa480ac7420f365ab3f.setContent(html_509739e14ff64b0eb2a0497641370954);
+            
+
+            marker_49a645c6c0bf4a2ead61ac5aeb3183cc.bindPopup(popup_86c7ed6b82b34aa480ac7420f365ab3f);
+
+            
+        
+    
+
+            var marker_b3bb64ab57614a9db7a116d7e854971d = L.marker(
+                [52.366302,4.923331],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_e90d550b0dd4482f9ee6903ba3a6faf5);
+            
+    
+            var popup_380b06dbceff4be9b843bb37dd7940d8 = L.popup({maxWidth: '300'});
+
+            
+                var html_78fdeb01cdd14674aae94af8933b01c9 = $('<div id="html_78fdeb01cdd14674aae94af8933b01c9" style="width: 100.0%; height: 100.0%;">sarphatistraat 221</div>')[0];
+                popup_380b06dbceff4be9b843bb37dd7940d8.setContent(html_78fdeb01cdd14674aae94af8933b01c9);
+            
+
+            marker_b3bb64ab57614a9db7a116d7e854971d.bindPopup(popup_380b06dbceff4be9b843bb37dd7940d8);
+
+            
+        
+    
+
+            var marker_a50430508f0b47bdb5facf5bf0134990 = L.marker(
+                [52.351515,4.9177],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_e90d550b0dd4482f9ee6903ba3a6faf5);
+            
+    
+            var popup_23a6b7cfa50f496ba5fb37c90a432407 = L.popup({maxWidth: '300'});
+
+            
+                var html_91c79b3c391247c4b6f096a253985177 = $('<div id="html_91c79b3c391247c4b6f096a253985177" style="width: 100.0%; height: 100.0%;">kraaipanstraat</div>')[0];
+                popup_23a6b7cfa50f496ba5fb37c90a432407.setContent(html_91c79b3c391247c4b6f096a253985177);
+            
+
+            marker_a50430508f0b47bdb5facf5bf0134990.bindPopup(popup_23a6b7cfa50f496ba5fb37c90a432407);
+
+            
+        
+    
+
+            var marker_970d0f91662f444db8b39ac3f07c15d0 = L.marker(
+                [52.356278,4.887118],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_e90d550b0dd4482f9ee6903ba3a6faf5);
+            
+    
+            var popup_699c52ad3a9d436a94150bc8cca9c859 = L.popup({maxWidth: '300'});
+
+            
+                var html_163e7f0ff9204b0ba86d86a9ab7cdbf6 = $('<div id="html_163e7f0ff9204b0ba86d86a9ab7cdbf6" style="width: 100.0%; height: 100.0%;">daniel stalpertstraat</div>')[0];
+                popup_699c52ad3a9d436a94150bc8cca9c859.setContent(html_163e7f0ff9204b0ba86d86a9ab7cdbf6);
+            
+
+            marker_970d0f91662f444db8b39ac3f07c15d0.bindPopup(popup_699c52ad3a9d436a94150bc8cca9c859);
+
+            
+        
+    
+
+            var marker_41653426437f443db8132e9cb335251b = L.marker(
+                [52.35694,4.887075],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_e90d550b0dd4482f9ee6903ba3a6faf5);
+            
+    
+            var popup_14d5bde0dded4eba9f0dfe6d46f4184f = L.popup({maxWidth: '300'});
+
+            
+                var html_0d65dd40f88c453a90371fe8ad018c74 = $('<div id="html_0d65dd40f88c453a90371fe8ad018c74" style="width: 100.0%; height: 100.0%;">quellijnstraat</div>')[0];
+                popup_14d5bde0dded4eba9f0dfe6d46f4184f.setContent(html_0d65dd40f88c453a90371fe8ad018c74);
+            
+
+            marker_41653426437f443db8132e9cb335251b.bindPopup(popup_14d5bde0dded4eba9f0dfe6d46f4184f);
+
+            
+        
+    
+
+            var marker_cba1689e03ef446a984a09a4ac633507 = L.marker(
+                [52.353723,5.000672],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_e90d550b0dd4482f9ee6903ba3a6faf5);
+            
+    
+            var popup_a818e6b246db4f4abe8cff92ba6228bd = L.popup({maxWidth: '300'});
+
+            
+                var html_fbaccc7f002545b78b20d904b21dd45a = $('<div id="html_fbaccc7f002545b78b20d904b21dd45a" style="width: 100.0%; height: 100.0%;">lumiere hoek maria austria</div>')[0];
+                popup_a818e6b246db4f4abe8cff92ba6228bd.setContent(html_fbaccc7f002545b78b20d904b21dd45a);
+            
+
+            marker_cba1689e03ef446a984a09a4ac633507.bindPopup(popup_a818e6b246db4f4abe8cff92ba6228bd);
+
+            
+        
+    
+
+            var marker_077fb0c0474644689e12a51d4a437a0e = L.marker(
+                [52.3612775,4.9758081],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_e90d550b0dd4482f9ee6903ba3a6faf5);
+            
+    
+            var popup_639ce4fdccca4000a35e9058f9a606cc = L.popup({maxWidth: '300'});
+
+            
+                var html_bb9d1b1ce27746a3a71127de613a62b0 = $('<div id="html_bb9d1b1ce27746a3a71127de613a62b0" style="width: 100.0%; height: 100.0%;">Jan Olphert Vaillantlaan 159</div>')[0];
+                popup_639ce4fdccca4000a35e9058f9a606cc.setContent(html_bb9d1b1ce27746a3a71127de613a62b0);
+            
+
+            marker_077fb0c0474644689e12a51d4a437a0e.bindPopup(popup_639ce4fdccca4000a35e9058f9a606cc);
+
+            
+        
+    
+
+            var marker_3ea756f35cc74d368a6520c602918830 = L.marker(
+                [52.3681734,4.9457027],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_e90d550b0dd4482f9ee6903ba3a6faf5);
+            
+    
+            var popup_ae7f43cf47034d1bb8fe3204e570608e = L.popup({maxWidth: '300'});
+
+            
+                var html_2ef7cb9297334798973e6b9718548f3f = $('<div id="html_2ef7cb9297334798973e6b9718548f3f" style="width: 100.0%; height: 100.0%;">j.m.van der meylaan</div>')[0];
+                popup_ae7f43cf47034d1bb8fe3204e570608e.setContent(html_2ef7cb9297334798973e6b9718548f3f);
+            
+
+            marker_3ea756f35cc74d368a6520c602918830.bindPopup(popup_ae7f43cf47034d1bb8fe3204e570608e);
+
+            
+        
+    
+
+            var marker_563262cec2aa45fa9e85f6a643f13f73 = L.marker(
+                [52.3572812,4.9939396],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_e90d550b0dd4482f9ee6903ba3a6faf5);
+            
+    
+            var popup_689a952fad8a4415a03473d7632f30d5 = L.popup({maxWidth: '300'});
+
+            
+                var html_6b7dfa902c82495dacb7ee5062978da1 = $('<div id="html_6b7dfa902c82495dacb7ee5062978da1" style="width: 100.0%; height: 100.0%;">hoek maria austria-talbotstraat</div>')[0];
+                popup_689a952fad8a4415a03473d7632f30d5.setContent(html_6b7dfa902c82495dacb7ee5062978da1);
+            
+
+            marker_563262cec2aa45fa9e85f6a643f13f73.bindPopup(popup_689a952fad8a4415a03473d7632f30d5);
+
+            
+        
+    
+
+            var marker_c12b2656a435413095295c374ee3adfc = L.marker(
+                [52.3340925,4.9520167],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_e90d550b0dd4482f9ee6903ba3a6faf5);
+            
+    
+            var popup_00b002fa03c540caa1b2e221bc978d54 = L.popup({maxWidth: '300'});
+
+            
+                var html_8e4ddbb933d647a78b4ad03d6c799976 = $('<div id="html_8e4ddbb933d647a78b4ad03d6c799976" style="width: 100.0%; height: 100.0%;">akkerland</div>')[0];
+                popup_00b002fa03c540caa1b2e221bc978d54.setContent(html_8e4ddbb933d647a78b4ad03d6c799976);
+            
+
+            marker_c12b2656a435413095295c374ee3adfc.bindPopup(popup_00b002fa03c540caa1b2e221bc978d54);
+
+            
+        
+    
+
+            var marker_c53b66cdf9664f09884f8d64b6f8a589 = L.marker(
+                [52.313325,4.877403],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_e90d550b0dd4482f9ee6903ba3a6faf5);
+            
+    
+            var popup_33690374ec844ce1881da3fd0bdfe071 = L.popup({maxWidth: '300'});
+
+            
+                var html_c564bacc41ff4f6b871564a736a842fe = $('<div id="html_c564bacc41ff4f6b871564a736a842fe" style="width: 100.0%; height: 100.0%;">suze groeneweg/florence nightingalelaan</div>')[0];
+                popup_33690374ec844ce1881da3fd0bdfe071.setContent(html_c564bacc41ff4f6b871564a736a842fe);
+            
+
+            marker_c53b66cdf9664f09884f8d64b6f8a589.bindPopup(popup_33690374ec844ce1881da3fd0bdfe071);
+
+            
+        
+    
+
+            var marker_78547348d9ec487998bac92ef8f3a463 = L.marker(
+                [52.3511739,4.9121],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_e90d550b0dd4482f9ee6903ba3a6faf5);
+            
+    
+            var popup_6fa3ecd403dc47d3a5657f8eb21e6b2a = L.popup({maxWidth: '300'});
+
+            
+                var html_662a31f18ce14d87958999b31f1a2bac = $('<div id="html_662a31f18ce14d87958999b31f1a2bac" style="width: 100.0%; height: 100.0%;">weesperzijde 110 (binnentuin)</div>')[0];
+                popup_6fa3ecd403dc47d3a5657f8eb21e6b2a.setContent(html_662a31f18ce14d87958999b31f1a2bac);
+            
+
+            marker_78547348d9ec487998bac92ef8f3a463.bindPopup(popup_6fa3ecd403dc47d3a5657f8eb21e6b2a);
+
+            
+        
+    
+
+            var marker_f949f61c385241f39cd25167448a6e72 = L.marker(
+                [52.3604001,4.8247244],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_e90d550b0dd4482f9ee6903ba3a6faf5);
+            
+    
+            var popup_e9762b7a312148fca3cf66e24bd38eb6 = L.popup({maxWidth: '300'});
+
+            
+                var html_6c744cef799c42c884f3556c74c0bea7 = $('<div id="html_6c744cef799c42c884f3556c74c0bea7" style="width: 100.0%; height: 100.0%;">johannes van meurshof</div>')[0];
+                popup_e9762b7a312148fca3cf66e24bd38eb6.setContent(html_6c744cef799c42c884f3556c74c0bea7);
+            
+
+            marker_f949f61c385241f39cd25167448a6e72.bindPopup(popup_e9762b7a312148fca3cf66e24bd38eb6);
+
+            
+        
+    
+
+            var marker_547bf737468a423ba5ab19796a28dc41 = L.marker(
+                [52.3514622,4.8815228],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_e90d550b0dd4482f9ee6903ba3a6faf5);
+            
+    
+            var popup_7e710e9bb7c041bf88d056f2f794f7e0 = L.popup({maxWidth: '300'});
+
+            
+                var html_8703319820094c1ea5cedf6a63637247 = $('<div id="html_8703319820094c1ea5cedf6a63637247" style="width: 100.0%; height: 100.0%;">harmoniehof</div>')[0];
+                popup_7e710e9bb7c041bf88d056f2f794f7e0.setContent(html_8703319820094c1ea5cedf6a63637247);
+            
+
+            marker_547bf737468a423ba5ab19796a28dc41.bindPopup(popup_7e710e9bb7c041bf88d056f2f794f7e0);
+
+            
+        
+    
+
+            var marker_9479111ffe80445fb4f3ed3feaba3dea = L.marker(
+                [52.3920048,4.9442745],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_e90d550b0dd4482f9ee6903ba3a6faf5);
+            
+    
+            var popup_f59b21bd37a74c918c2f2539215382e2 = L.popup({maxWidth: '300'});
+
+            
+                var html_004b3c36019c454eacc2ff3da40d7322 = $('<div id="html_004b3c36019c454eacc2ff3da40d7322" style="width: 100.0%; height: 100.0%;">hensbroekerstraat/ilpendammerstraat</div>')[0];
+                popup_f59b21bd37a74c918c2f2539215382e2.setContent(html_004b3c36019c454eacc2ff3da40d7322);
+            
+
+            marker_9479111ffe80445fb4f3ed3feaba3dea.bindPopup(popup_f59b21bd37a74c918c2f2539215382e2);
+
+            
+        
+    
+
+            var marker_00805eb37b304006af5c8bc4288acd8e = L.marker(
+                [52.3773338,4.9464001],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_e90d550b0dd4482f9ee6903ba3a6faf5);
+            
+    
+            var popup_9228779602d3405eb2fcb848872382f6 = L.popup({maxWidth: '300'});
+
+            
+                var html_b9b39c9357fa430f9dda68e5e2dc70ef = $('<div id="html_b9b39c9357fa430f9dda68e5e2dc70ef" style="width: 100.0%; height: 100.0%;">VenetiÃ«hof</div>')[0];
+                popup_9228779602d3405eb2fcb848872382f6.setContent(html_b9b39c9357fa430f9dda68e5e2dc70ef);
+            
+
+            marker_00805eb37b304006af5c8bc4288acd8e.bindPopup(popup_9228779602d3405eb2fcb848872382f6);
+
+            
+        
+    
+
+            var marker_e991b44b156e4503bbec512fd553d121 = L.marker(
+                [52.4053634,4.8999979],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_e90d550b0dd4482f9ee6903ba3a6faf5);
+            
+    
+            var popup_8b2b2517a3844248bc505dac07179d16 = L.popup({maxWidth: '300'});
+
+            
+                var html_a29b2a3910eb493ea333e2e91235784a = $('<div id="html_a29b2a3910eb493ea333e2e91235784a" style="width: 100.0%; height: 100.0%;">annabellaweg 1</div>')[0];
+                popup_8b2b2517a3844248bc505dac07179d16.setContent(html_a29b2a3910eb493ea333e2e91235784a);
+            
+
+            marker_e991b44b156e4503bbec512fd553d121.bindPopup(popup_8b2b2517a3844248bc505dac07179d16);
+
+            
+        
+    
+
+            var marker_f8cec8134f614df397dca1292b1c9819 = L.marker(
+                [52.3594959,4.9392225],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_e90d550b0dd4482f9ee6903ba3a6faf5);
+            
+    
+            var popup_a67cad5609994c1fae442c1486584cbc = L.popup({maxWidth: '300'});
+
+            
+                var html_0cbcbdbe69e646a6beaa3494d2ce19ea = $('<div id="html_0cbcbdbe69e646a6beaa3494d2ce19ea" style="width: 100.0%; height: 100.0%;">t.o. Halmaheirastraat 63</div>')[0];
+                popup_a67cad5609994c1fae442c1486584cbc.setContent(html_0cbcbdbe69e646a6beaa3494d2ce19ea);
+            
+
+            marker_f8cec8134f614df397dca1292b1c9819.bindPopup(popup_a67cad5609994c1fae442c1486584cbc);
+
+            
+        
+    
+
+            var marker_93db9171fab24d68aac43ed869ceafed = L.marker(
+                [52.3800813,4.7711392],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_e90d550b0dd4482f9ee6903ba3a6faf5);
+            
+    
+            var popup_a25bc7d1036c429a8b6bdb9fd52790ef = L.popup({maxWidth: '300'});
+
+            
+                var html_e901f990dd254d70847b8e4fe7c8f2b4 = $('<div id="html_e901f990dd254d70847b8e4fe7c8f2b4" style="width: 100.0%; height: 100.0%;">nico broekhuysenweg</div>')[0];
+                popup_a25bc7d1036c429a8b6bdb9fd52790ef.setContent(html_e901f990dd254d70847b8e4fe7c8f2b4);
+            
+
+            marker_93db9171fab24d68aac43ed869ceafed.bindPopup(popup_a25bc7d1036c429a8b6bdb9fd52790ef);
+
+            
+        
+    
+
+            var marker_91a1b5ad679d46728ad74ced75f4ef31 = L.marker(
+                [52.3742948,4.9461426],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_e90d550b0dd4482f9ee6903ba3a6faf5);
+            
+    
+            var popup_5e00722fc8884c4f97eda88cf7a333f5 = L.popup({maxWidth: '300'});
+
+            
+                var html_e0093072ef494f7ead186cc1e4979630 = $('<div id="html_e0093072ef494f7ead186cc1e4979630" style="width: 100.0%; height: 100.0%;">J.F.van Hengelstraat </div>')[0];
+                popup_5e00722fc8884c4f97eda88cf7a333f5.setContent(html_e0093072ef494f7ead186cc1e4979630);
+            
+
+            marker_91a1b5ad679d46728ad74ced75f4ef31.bindPopup(popup_5e00722fc8884c4f97eda88cf7a333f5);
+
+            
+        
+    
+
+            var marker_ab33aeb424a749f2ab2e2f0e36325c2f = L.marker(
+                [52.3676329,4.8538532],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_e90d550b0dd4482f9ee6903ba3a6faf5);
+            
+    
+            var popup_e030cb62094e4c0ea2c200e30f5cd39f = L.popup({maxWidth: '300'});
+
+            
+                var html_d25c0a7722f8480aa1630e997bd723a5 = $('<div id="html_d25c0a7722f8480aa1630e997bd723a5" style="width: 100.0%; height: 100.0%;">magalhaensplein</div>')[0];
+                popup_e030cb62094e4c0ea2c200e30f5cd39f.setContent(html_d25c0a7722f8480aa1630e997bd723a5);
+            
+
+            marker_ab33aeb424a749f2ab2e2f0e36325c2f.bindPopup(popup_e030cb62094e4c0ea2c200e30f5cd39f);
+
+            
+        
+    
+
+            var marker_e3fb612e05b34bc1a4d81a41d4496f94 = L.marker(
+                [52.2839112,4.8515358],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_e90d550b0dd4482f9ee6903ba3a6faf5);
+            
+    
+            var popup_7510f26868d94595baa10dc7dd4860de = L.popup({maxWidth: '300'});
+
+            
+                var html_1d3ae54772764c09a37567471bb9e70c = $('<div id="html_1d3ae54772764c09a37567471bb9e70c" style="width: 100.0%; height: 100.0%;">Grote Beer 1 â 115</div>')[0];
+                popup_7510f26868d94595baa10dc7dd4860de.setContent(html_1d3ae54772764c09a37567471bb9e70c);
+            
+
+            marker_e3fb612e05b34bc1a4d81a41d4496f94.bindPopup(popup_7510f26868d94595baa10dc7dd4860de);
+
+            
+        
+    
+
+            var marker_deb5ab83bcee4fa882971a14bf77927b = L.marker(
+                [52.3703089,4.9365725],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_e90d550b0dd4482f9ee6903ba3a6faf5);
+            
+    
+            var popup_ff948953882a4058812a4e5c51a7a000 = L.popup({maxWidth: '300'});
+
+            
+                var html_40d88dcbf4c444428f0cc58e54ad5f30 = $('<div id="html_40d88dcbf4c444428f0cc58e54ad5f30" style="width: 100.0%; height: 100.0%;">entrepotbrug 168</div>')[0];
+                popup_ff948953882a4058812a4e5c51a7a000.setContent(html_40d88dcbf4c444428f0cc58e54ad5f30);
+            
+
+            marker_deb5ab83bcee4fa882971a14bf77927b.bindPopup(popup_ff948953882a4058812a4e5c51a7a000);
+
+            
+        
+    
+
+            var marker_4175809e899346b292eefb4b5b88ec73 = L.marker(
+                [52.3900331,4.8761048],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_e90d550b0dd4482f9ee6903ba3a6faf5);
+            
+    
+            var popup_fa8d313945124e87b860e8569c703c78 = L.popup({maxWidth: '300'});
+
+            
+                var html_34d57fd93e3b4e799978412df8f4bbbc = $('<div id="html_34d57fd93e3b4e799978412df8f4bbbc" style="width: 100.0%; height: 100.0%;">spaarndammerplantsoen</div>')[0];
+                popup_fa8d313945124e87b860e8569c703c78.setContent(html_34d57fd93e3b4e799978412df8f4bbbc);
+            
+
+            marker_4175809e899346b292eefb4b5b88ec73.bindPopup(popup_fa8d313945124e87b860e8569c703c78);
+
+            
+        
+    
+
+            var marker_836dfbfe7801495687431b0b15ddeb59 = L.marker(
+                [52.3813059,4.8761638],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_e90d550b0dd4482f9ee6903ba3a6faf5);
+            
+    
+            var popup_a1e5d58124f945e4bef91ad5873af876 = L.popup({maxWidth: '300'});
+
+            
+                var html_429570672214485ea4f397ac04ff5ccb = $('<div id="html_429570672214485ea4f397ac04ff5ccb" style="width: 100.0%; height: 100.0%;">hoek jacob catskade - de wittenstraat</div>')[0];
+                popup_a1e5d58124f945e4bef91ad5873af876.setContent(html_429570672214485ea4f397ac04ff5ccb);
+            
+
+            marker_836dfbfe7801495687431b0b15ddeb59.bindPopup(popup_a1e5d58124f945e4bef91ad5873af876);
+
+            
+        
+    
+
+            var marker_9c97d8f6cf1d46c39b58deeb5c28fb71 = L.marker(
+                [52.3403283,4.8487945],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_e90d550b0dd4482f9ee6903ba3a6faf5);
+            
+    
+            var popup_fd5ddba08d5146178b8069a215cad44b = L.popup({maxWidth: '300'});
+
+            
+                var html_51a93e8713da4f5fbd22436f958aba88 = $('<div id="html_51a93e8713da4f5fbd22436f958aba88" style="width: 100.0%; height: 100.0%;">ijsbaanpad</div>')[0];
+                popup_fd5ddba08d5146178b8069a215cad44b.setContent(html_51a93e8713da4f5fbd22436f958aba88);
+            
+
+            marker_9c97d8f6cf1d46c39b58deeb5c28fb71.bindPopup(popup_fd5ddba08d5146178b8069a215cad44b);
+
+            
+        
+    
+
+            var marker_ed015b85331a49868369b565ba659e7e = L.marker(
+                [52.355381,4.8980131],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_e90d550b0dd4482f9ee6903ba3a6faf5);
+            
+    
+            var popup_f319fdd715ac42079bb15f5e643b0d0d = L.popup({maxWidth: '300'});
+
+            
+                var html_df575bcf1d754c15abe1fc60a956c04f = $('<div id="html_df575bcf1d754c15abe1fc60a956c04f" style="width: 100.0%; height: 100.0%;">sarphatipark/sweelinckstraat</div>')[0];
+                popup_f319fdd715ac42079bb15f5e643b0d0d.setContent(html_df575bcf1d754c15abe1fc60a956c04f);
+            
+
+            marker_ed015b85331a49868369b565ba659e7e.bindPopup(popup_f319fdd715ac42079bb15f5e643b0d0d);
+
+            
+        
+    
+
+            var marker_27bedd55493d40eda3471b570c43d98c = L.marker(
+                [52.2981711,4.9840798],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_e90d550b0dd4482f9ee6903ba3a6faf5);
+            
+    
+            var popup_b3605a14ffac4fc6a4fd1f74d112856f = L.popup({maxWidth: '300'});
+
+            
+                var html_cc4776311c4b4f168bb46500cfa75d5e = $('<div id="html_cc4776311c4b4f168bb46500cfa75d5e" style="width: 100.0%; height: 100.0%;">vianenstraat t.o. 160</div>')[0];
+                popup_b3605a14ffac4fc6a4fd1f74d112856f.setContent(html_cc4776311c4b4f168bb46500cfa75d5e);
+            
+
+            marker_27bedd55493d40eda3471b570c43d98c.bindPopup(popup_b3605a14ffac4fc6a4fd1f74d112856f);
+
+            
+        
+    
+
+            var marker_bca64dffa0e544b2991e632fc307fa7a = L.marker(
+                [52.3571305,4.9370124],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_e90d550b0dd4482f9ee6903ba3a6faf5);
+            
+    
+            var popup_8bb84165fe0d4614b6412af2e3a700e3 = L.popup({maxWidth: '300'});
+
+            
+                var html_266c251f5c4b4e149362cb2bda80d0ea = $('<div id="html_266c251f5c4b4e149362cb2bda80d0ea" style="width: 100.0%; height: 100.0%;">archimedesweg</div>')[0];
+                popup_8bb84165fe0d4614b6412af2e3a700e3.setContent(html_266c251f5c4b4e149362cb2bda80d0ea);
+            
+
+            marker_bca64dffa0e544b2991e632fc307fa7a.bindPopup(popup_8bb84165fe0d4614b6412af2e3a700e3);
+
+            
+        
+    
+
+            var marker_5791f8b70aea4083872775e2f1b06519 = L.marker(
+                [52.3491685,4.9071004],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_e90d550b0dd4482f9ee6903ba3a6faf5);
+            
+    
+            var popup_3634b0b5d67a48d0a7484b21d200b692 = L.popup({maxWidth: '300'});
+
+            
+                var html_5f35f1217aef488691a8633b83821df7 = $('<div id="html_5f35f1217aef488691a8633b83821df7" style="width: 100.0%; height: 100.0%;">Borssenburgplein</div>')[0];
+                popup_3634b0b5d67a48d0a7484b21d200b692.setContent(html_5f35f1217aef488691a8633b83821df7);
+            
+
+            marker_5791f8b70aea4083872775e2f1b06519.bindPopup(popup_3634b0b5d67a48d0a7484b21d200b692);
+
+            
+        
+</script>
