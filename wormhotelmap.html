@@ -93,8 +93,7 @@
             
     
             var layer_control_da88510139874fdabf249ffb7a3f0c08 = {
-                base_layers : { "stamentoner" : tile_layer_1ee39ffd95784dfabe91f3ee3f70cc03, },
-                overlays : { "By Duration" : feature_group_3273f10cb5eb41ad80f566e3c295022f,"By Total Seconds" : feature_group_ba74930a09a34994a919c85012299ea8, }
+                base_layers : { "By Duration" : feature_group_3273f10cb5eb41ad80f566e3c295022f,"By Total Seconds" : feature_group_ba74930a09a34994a919c85012299ea8, }
                 };
             L.control.layers(
                 layer_control_da88510139874fdabf249ffb7a3f0c08.base_layers,
@@ -104,10 +103,9 @@
                  autoZIndex: true
                 }).addTo(map_2b170bcc6f804a5684c6b6cf04213ecc);
         
-document.querySelectorAll('.leaflet-control-layers-selector')[2].click()
 
 geo_json_9b6a3b95a25948edbacf4d05f249589e.eachLayer(function (layer) { layer.bindPopup(layer.feature.properties.naam); });
 
 
-
 </script>
+<!-- <script>document.querySelectorAll('.leaflet-control-layers-selector')[1].click()</script> -->
